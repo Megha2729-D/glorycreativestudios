@@ -145,6 +145,38 @@
         }
     });
 
+    var $window = $(window);
+
+    var scrollToTopBtn = ".scrollToTop";
+
+    $window.on("scroll", function () {
+        if ($window.scrollTop() > 500) {
+            $(scrollToTopBtn).addClass("show");
+        } else {
+            $(scrollToTopBtn).removeClass("show");
+        }
+    });
+
+    $window.on("resize", function () {
+        if ($stickyWrapper.hasClass("will-sticky")) {
+            $stickyWrapper.css("min-height", $stickyTarget.outerHeight() + "px");
+        }
+    });
+
+    /*---------- 05. Scroll To Top ----------*/
+    $(scrollToTopBtn).each(function () {
+        $(this).on("click", function (e) {
+            e.preventDefault();
+            console.log("scroll to top clicked");
+            $("html, body").animate({
+                scrollTop: 0,
+            },
+                1000
+            );
+            return false;
+        });
+    });
+
     /* ================================
    Smooth Scroller And Title Animation Js Start
 ================================ */
