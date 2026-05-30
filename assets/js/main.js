@@ -1,5 +1,8 @@
 (function ($) {
     "use strict";
+
+    AOS.init();
+
     window.gsapAnimations = function () {
         initGlobalFadeAnimations();
         initPxnZoom();
