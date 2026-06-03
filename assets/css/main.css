@@ -3672,7 +3672,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 
     .page-breadcrumbs {
         padding: 180px 0 80px;
-    background-size: auto;
+        background-size: auto;
     }
 
     .page-breadcrumbs h1 {
@@ -4143,6 +4143,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
     .faq-block-one .title-box .content .title {
         font-size: 15px !important;
     }
+
 }
 
 .faq-block-one .title-box .icon {
@@ -4851,6 +4852,10 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 @media (max-width: 469.98px) {
     .pricing-section-2 .sec-title {
         margin-bottom: 15px;
+    }
+    
+    .contact-details__info li .text {
+        margin-left: 10px;
     }
 }
 
