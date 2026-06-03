@@ -157,11 +157,11 @@
         }
     });
 
-    $window.on("resize", function () {
-        if ($stickyWrapper.hasClass("will-sticky")) {
-            $stickyWrapper.css("min-height", $stickyTarget.outerHeight() + "px");
-        }
-    });
+    // $window.on("resize", function () {
+    //     if ($stickyWrapper.hasClass("will-sticky")) {
+    //         $stickyWrapper.css("min-height", $stickyTarget.outerHeight() + "px");
+    //     }
+    // });
 
     /*---------- 05. Scroll To Top ----------*/
     $(scrollToTopBtn).each(function () {
@@ -701,4 +701,60 @@
             });
         });
     }
+
+    // accordian
+
+    //Accordion Box
+    var $faqItems = $(".faq-block-one, .faq-block-two");
+
+    if (!$faqItems.length) return;
+
+    // 🔥 Page Load - Active item open
+    $faqItems.filter(".active").each(function () {
+        var $this = $(this);
+        $this.find(".content-box").show();
+        $this.find(".icon i")
+            .removeClass("bi-plus")
+            .addClass("bi-dash");
+    });
+
+    // 🔥 Event Delegation (Better Practice)
+    $(document).on("click", ".title-box", function () {
+
+        var $parent = $(this).closest(".faq-block-one, .faq-block-two");
+
+        if ($parent.hasClass("active")) {
+
+            $parent.removeClass("active")
+                .find(".content-box")
+                .stop(true, true)
+                .slideUp(300);
+
+            $parent.find(".icon i")
+                .removeClass("bi-dash")
+                .addClass("bi-plus");
+
+        } else {
+
+            // Close all
+            $faqItems.removeClass("active")
+                .find(".content-box")
+                .stop(true, true)
+                .slideUp(300);
+
+            $faqItems.find(".icon i")
+                .removeClass("bi-dash")
+                .addClass("bi-plus");
+
+            // Open current
+            $parent.addClass("active")
+                .find(".content-box")
+                .stop(true, true)
+                .slideDown(300);
+
+            $parent.find(".icon i")
+                .removeClass("bi-plus")
+                .addClass("bi-dash");
+        }
+    });
 })(jQuery);

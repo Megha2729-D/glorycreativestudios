@@ -2223,13 +2223,13 @@ progress {
     cursor: pointer
 }
 
-.form-control:focus {
+/* .form-control:focus {
     color: var(--bs-body-color);
     background-color: var(--bs-body-bg);
     border-color: #86b7fe;
     outline: 0;
     box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25)
-}
+} */
 
 .form-control::-webkit-date-and-time-value {
     min-width: 85px;
