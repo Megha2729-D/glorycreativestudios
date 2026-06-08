@@ -1531,7 +1531,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 
 .pxn_offcanvas_menu .mean-nav ul:not(.sub-menu)>li>a:not(.mean-expand):hover,
 .pxn_offcanvas_menu .mean-nav ul:not(.sub-menu)>li>a:not(.mean-expand):focus {
-    color: inherit;
+    color: #ffffff;
 }
 
 .pxn_offcanvas_menu .mean-nav ul:not(.sub-menu)>li.dropdown-opened>a {
