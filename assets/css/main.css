@@ -951,12 +951,20 @@ only screen and (min-width: 576px) and (max-width: 767px),
     color: var(--pxn-color-common-white);
 }
 
+.pxn-header.sticky .pxn_offcanvas_toggle {
+    color: #000000;
+}
+
 .pxn_offcanvas_toggle .icon {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     font-size: 35px;
     line-height: 1;
+}
+
+.pxn-header.sticky .pxn_offcanvas_toggle .icon img {
+    filter: grayscale(100%) contrast(120%) brightness(0);
 }
 
 .pxn_offcanvas_toggle .icon i,
@@ -2597,7 +2605,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
     width: 40%;
     height: 200px;
     position: absolute;
-    left: 0%;
+    left: 3%;
     top: 0%;
     object-fit: cover;
 }
@@ -2691,7 +2699,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 
 @media (max-width: 767px) {
     .service-image img {
-        height: 380px;
+        height: 100%;
     }
 
     .service-content h4 {
@@ -2996,7 +3004,9 @@ only screen and (min-width: 576px) and (max-width: 767px) {
     min-height: 350px;
     border: 1px solid #ffffff14;
     /* border-radius: 30px; */
-    background: #0a0a0a;
+    background: linear-gradient(#0a0a0ae3, #0a0a0ae3), url(../images/breadcrumbs.webp);
+    background-position: center;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -3053,11 +3063,17 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 }
 
 .testimonial-card {
-    background: #0a0a0a;
+    /* background: #0a0a0a; */
+    background: linear-gradient(#0a0a0ae3, #0a0a0ae3), url(../images/breadcrumbs.webp);
+    background-position: center;
+    background-attachment: fixed;
     border: 1px solid #ffffff14;
     /* border-radius: 30px; */
     padding: 50px;
-    min-height: 350px;
+    min-height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .stars {
@@ -3124,6 +3140,11 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 
     .trust-box {
         min-height: 280px;
+    }
+
+    .gallery {
+        column-count: 2;
+        column-gap: 6px;
     }
 }
 
