@@ -124,10 +124,10 @@ a {
     height: calc(2.25rem + 27px);
     padding: 14px 30px;
     outline: 0;
-    background-color: #222222;
+    background-color: #ffffff;
     border: 1px solid #35373a;
-    color: #ffffff;
-    font-size: 0.9rem;
+    color: #000000;
+    font-size: 15px;
     width: 100%;
 }
 
@@ -3309,6 +3309,11 @@ only screen and (min-width: 576px) and (max-width: 767px) {
     position: relative;
 }
 
+.glory-footer .container {
+    position: relative;
+    z-index: 2;
+}
+
 .glory-footer::before {
     content: '';
     position: absolute;
@@ -4487,7 +4492,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 .contact-details__info li .icon {
     height: 80px;
     width: 80px;
-    background-color: #f4c40021;
+    background-color: #f4c400;
     backdrop-filter: blur(5px);
     color: var(--pxn-color-theme-secondary);
     display: -webkit-box;
@@ -4532,13 +4537,17 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 
 .contact-details__info li .text a {
     font-size: 18px;
-    color: #ffffff;
+    color: #000000;
     transition: all 500ms ease;
 }
 
+.contact-details__info h5 {
+    font-weight: bold;
+}
+
 .contact-details__info li .text span {
-    font-size: 20px;
-    color: #ffffff;
+    font-size: 18px;
+    color: #000000;
 }
 
 .contact-details__info li+li {
