@@ -2500,6 +2500,10 @@ only screen and (min-width: 576px) and (max-width: 767px) {
     .about-content .about-thumb-items {
         display: flex;
     }
+
+    .mouse-cursor {
+        display: none;
+    }
 }
 
 @media (max-width: 767.98px) {
