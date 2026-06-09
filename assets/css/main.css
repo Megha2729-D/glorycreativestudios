@@ -1259,6 +1259,7 @@ START: Offcanvas CSS
     z-index: 998;
     left: 0;
     backdrop-filter: blur(10px);
+    background: #00000061;
     -webkit-transition: all 0.5s ease-in 0.7s;
     transition: all 0.5s ease-in 0.7s;
     -webkit-transform: translateX(-110%);
@@ -1763,18 +1764,22 @@ only screen and (min-width: 576px) and (max-width: 767px),
     background: white;
     box-shadow: 0 0 16px white;
 }
-.loader_content img{
+
+.loader_content img {
     height: 200px;
     width: 200px;
 }
+
 @keyframes spin {
     to {
         transform: rotate(360deg);
     }
 }
-.loader_content span{
+
+.loader_content span {
     color: #000000 !important;
 }
+
 /* .preloader .loader_content,
 .preloader .loading {
     height: 100px;
