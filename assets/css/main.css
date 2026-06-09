@@ -420,7 +420,27 @@ body {
     font-weight: var(--pxn-fw-regular);
     color: #000000;
     line-height: 1.6;
-    background: #ffffff;
+    /* background: #ffffff; */
+    background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEyL3Jhd3BpeGVsX29mZmljZV8zOF9hX3doaXRlX3BhcGVyX3RleHR1cmVfb2Zfc2NyaWJibGVfc3Ryb2tlX3NpbV84ZmFkMmM2YS0wMmQ3LTQxNDgtYWI2Yy00ZWI1ZmI5MmY0YzNfMS5qcGc.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+body::before {
+    background: #ffffff7a;
+    position: absolute;
+    content: "";
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+section {
+    position: relative;
+    z-index: 2;
 }
 
 /**----------------------------------------
@@ -2423,6 +2443,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
     align-items: center;
     justify-content: space-between;
     margin-top: 30px;
+    backdrop-filter: blur(4px);
 }
 
 .about-content ul {
