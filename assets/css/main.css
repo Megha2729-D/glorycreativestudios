@@ -1275,7 +1275,7 @@ START: Offcanvas CSS
 }
 
 .pxn_offcanvas .offcanvas_bg {
-    background-color: #000000;
+    background-color: #ffffff;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1338,6 +1338,8 @@ START: Offcanvas CSS
     display: -ms-inline-flexbox;
     display: inline-flex;
     line-height: 1;
+    color: #000000;
+
 }
 
 .pxn_offcanvas .offcanvas_close .icon svg {
@@ -1401,7 +1403,7 @@ START: Offcanvas CSS
 }
 
 .pxn_offcanvas .offcanvas_socials i {
-    color: #ffffff;
+    color: #000000;
 }
 
 .mean-container .mean-nav ul li a {
@@ -1458,7 +1460,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 
 .pxn_contact .contact_info {
     font-size: 18px;
-    color: #dfdfdf;
+    color: #2b2b2b;
     margin: 0;
     display: inline-block;
     position: relative;
@@ -1700,7 +1702,8 @@ only screen and (min-width: 576px) and (max-width: 767px),
     inset-inline-end: 0;
     bottom: 0;
     z-index: 1000;
-    background-color: var(--pxn-color-theme-secondary);
+    background-color: #ffffff;
+    /* background-color: var(--pxn-color-theme-secondary); */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1760,13 +1763,18 @@ only screen and (min-width: 576px) and (max-width: 767px),
     background: white;
     box-shadow: 0 0 16px white;
 }
-
+.loader_content img{
+    height: 200px;
+    width: 200px;
+}
 @keyframes spin {
     to {
         transform: rotate(360deg);
     }
 }
-
+.loader_content span{
+    color: #000000 !important;
+}
 /* .preloader .loader_content,
 .preloader .loading {
     height: 100px;

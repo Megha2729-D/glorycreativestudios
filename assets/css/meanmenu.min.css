@@ -74,9 +74,8 @@ a.meanmenu-reveal {
     padding: 1em 5%;
     margin: 0;
     text-align: left;
-    color: #fff;
-    border-top: 1px solid #383838;
-    border-top: 1px solid rgba(255, 255, 255, .5);
+    color: #000000;
+    border-top: 1px solid #67676780;
     text-decoration: none;
     text-transform: uppercase
 }
