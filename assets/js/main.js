@@ -234,13 +234,13 @@
                     scrollTrigger: {
                         trigger: el,
                         start: "top 90%",
-                        end: "top 60%",
-                        scrub: 1
+                        toggleActions: "play none none none",
+                        once: true
                     },
                     x: 0,
                     opacity: 1,
                     duration: 0.7,
-                    stagger: 0.2
+                    stagger: 0.05
                 });
             });
 
@@ -263,13 +263,13 @@
                     scrollTrigger: {
                         trigger: el,
                         start: "top 92%",
-                        end: "top 60%",
-                        scrub: 1
+                        toggleActions: "play none none none",
+                        once: true
                     },
                     x: 0,
                     opacity: 1,
                     duration: 0.7,
-                    stagger: 0.2
+                    stagger: 0.03
                 });
             });
 
