@@ -2651,7 +2651,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
     width: 80%;
     height: 400px;
     object-fit: cover;
-    object-position: center;
+    object-position: top;
 }
 
 .serv-side-imgs-3 {
