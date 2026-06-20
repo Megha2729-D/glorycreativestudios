@@ -87,6 +87,12 @@ a {
     text-decoration: none;
 }
 
+.error-message {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -569,7 +575,7 @@ START: Theme Header CSS
 }
 
 .pxn_main_navigation ul>li.menu-item-has-children>a:after,
-.pxn_main_navigation ul>li.has-dropdown>a:after ,
+.pxn_main_navigation ul>li.has-dropdown>a:after,
 .pxn_offcanvas_menu ul>li.has-dropdown>a:after {
     content: "\f282";
     font-family: "bootstrap-icons";
@@ -3474,7 +3480,6 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 
 .footer-contact i {
     color: #d4af37;
-    margin-top: 4px;
 }
 
 .footer-bottom {
