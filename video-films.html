@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Films | Glory Photography - Capturing Timeless Memories</title>
+
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/aos.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!-- Magic Cursor -->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+    <!-- Magic Cursor -->
+
+    <!-- Preloader Start -->
+    <div class="preloader" id="pxn-preloader">
+        <div class="loader_content justify-content-center">
+            <!-- <div class="stage">
+                <div class="orbit-wrap">
+                    <div class="orbit-ring"></div>
+                    <div class="orbit-ring"></div>
+                    <div class="orbit-ring"></div>
+                    <div class="orbit-core"></div>
+                </div>
+            </div> -->
+            <div>
+                <img src="assets/images/preloader.svg" alt="">
+            </div>
+            <div class="d-flex justify-content-center">
+                <span class="text-white h5 fw-bold">LOADING...</span>
+            </div>
+            <!-- <div class="loading"></div>
+            <div class="loader_image"><img src="assets/images/logo/glory-photography.png" alt="Loader"></div> -->
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- back to top start -->
+    <div class="pxn_back-to-top">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- back to top end -->
+
+    <!-- start: Offcanvas -->
+    <div class="pxn_offcanvas_overlay"></div>
+    <div class="pxn_offcanvas">
+        <div class="offcanvas_bg"></div>
+        <div class="offcanvas_wrapper">
+            <!-- top -->
+            <div class="offcanvas_top d-flex flex-wrap align-items-center justify-content-between gap-3">
+                <div class="offcanvas_logo">
+                    <a href="index.html" class="logo">
+                        <img src="./assets/images/logo/glory-photography.png" alt="Glory Photography Logo">
+                    </a>
+                </div>
+
+                <button class="offcanvas_close">
+                    <!-- <span class="text">Close</span> -->
+                    <span class="icon"><i class="bi bi-x-lg"></i></span>
+                </button>
+            </div>
+
+            <!-- description -->
+            <div class="offcanvas_desc d-none d-lg-block">
+                Glory Photography captures timeless wedding, portrait, maternity, and event moments
+                with a cinematic and creative storytelling approach. We create elegant visuals that
+                preserve emotions, celebrations, and memories beautifully.
+            </div>
+
+
+            <!-- mobile menu -->
+            <div class="pxn_offcanvas_menu mobile_menu d-lg-none"></div>
+
+            <!-- location -->
+            <div class="offcanvas_contact pxn_contact">
+                <div class="contact_title">Location</div>
+
+                <div class="contact_info">
+                    No.105, Buddan Street, <br />
+                    Manager House, <br />
+                    SDA School Back Side, <br />
+                    Kochadai, Madurai, <br />
+                    Tamil Nadu – 625016
+                </div>
+            </div>
+
+            <!-- contact -->
+            <div class="offcanvas_contact pxn_contact">
+                <div class="contact_title">Contact Us</div>
+
+                <a href="tel:+919150840876" class="contact_info">
+                    +91 91508 40876
+                </a>
+
+                <a href="mailto:gloryofficials@outlook.com" class="contact_info">
+                    gloryofficials@outlook.com
+                </a>
+            </div>
+            <ul class="offcanvas_socials pxn_socials_3 d-flex gap-3 ps-0">
+                <li>
+                    <a class="icon" href="https://www.facebook.com/profile.php?id=100063702384110" target="_blank">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="icon" href="https://www.instagram.com/glory_photography_/" target="_blank">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="icon" href="https://www.linkedin.com/company/129913932/" target="_blank">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="icon" href="https://x.com/GloryCreativest" target="_blank">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- end: Offcanvas -->
+
+    <!-- start: Header Area -->
+    <header class="pxn-header pxn-header-1 header-absolute">
+        <div class="pxn_header_main">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div class="pxn_header_main_wrap d-flex flex-wrap align-items-center">
+                            <!-- logo -->
+                            <a class="pxn_site_logo" href="index.html">
+                                <img src="assets/images/logo/glory-photography.png" alt="Logo">
+                            </a>
+
+                            <!-- navigation -->
+                            <nav class="pxn_main_navigation d-none d-lg-inline-block" id="mobile-menu">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li class="has-dropdown"><a href="javascript:void(0);">Our Services</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="wedding-photography.html">Wedding Photography</a></li>
+                                            <li><a href="pre-wedding-shoot.html">Pre-Wedding Shoot</a></li>
+                                            <li><a href="baby-shoot.html">Baby Photography</a></li>
+                                            <li><a href="maternity-shoot.html">Maternity Shoot</a></li>
+                                            <li><a href="event-coverage.html">Event Coverage</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="portfolio.html">Portfolio</a></li>
+                                    <li><a href="video-films.html">Films</a></li>
+                                    <!-- <li class="has-dropdown"><a href="javascript:void(0);">Enquiry</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="baby-shoot-enquiry.html">Baby Photoshoot Enquiry</a></li>
+                                            <li><a href="wedding-photography-enquiry.html">Wedding Photography
+                                                    Enquiry</a></li>
+                                        </ul>
+                                    </li> -->
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li class="d-lg-none"><a href="contact-us.html">Contact Us</a></li>
+                                </ul>
+                            </nav>
+
+                            <!-- socials -->
+                            <ul class="pxn_socials_2 d-none d-xxl-inline-flex">
+                                <li><a class="social" href="https://facebook.com/" target="_blank"><i
+                                            class="pxni-facebook"></i></a>
+                                </li>
+                                <li><a class="social" href="https://x.com/" target="_blank"><i
+                                            class="pxni-x-twitter"></i></a></li>
+                                <li><a class="social" href="https://linkedin.com/" target="_blank"><i
+                                            class="pxni-linkedin"></i></a>
+                                </li>
+                                <li><a class="social" href="https://instagram.com/" target="_blank"><i
+                                            class="pxni-instagram"></i></a>
+                                </li>
+                            </ul>
+
+                            <!-- right info -->
+                            <div class="pxn_header_right d-none d-md-inline-flex flex-wrap align-items-center">
+                                <button class="glory_butt_parent mt-0">
+                                    <a href="contact-us.html" class="btn-style-one">
+                                        <span class="btn-arrow-left">
+                                            <img src="assets/images/icons/right-arrow-1-2.webp" alt="Glory Photography">
+                                        </span>
+
+                                        <span class="btn-title">Contact Us</span>
+
+                                        <span class="btn-arrow-right">
+                                            <img src="assets/images/icons/right-arrow-1-2.webp" alt="Glory Photography">
+                                        </span>
+                                    </a>
+                                </button>
+                                <!-- <a href="contact-us.html" class="pxn_header_btn pxn-btn-primary">
+                                    <span class="btn_text"><span>Contact Us</span></span>
+                                    <span class="btn_icon"><i class="bi bi-arrow-right"></i></span>
+                                </a> -->
+                            </div>
+
+                            <!-- offcanvas toggle -->
+                            <button class="pxn_offcanvas_toggle d-lg-none">
+                                <span class="text">Menu</span>
+                                <span class="icon">
+                                    <img src="assets/images/icons/menu.png" alt="">
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header class="pxn-header header-duplicate header-1 header-sticky">
+        <div class="pxn_header_main">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div class="pxn_header_main_wrap d-flex flex-wrap align-items-center">
+                            <!-- logo -->
+                            <a class="pxn_site_logo" href="index.html">
+                                <img src="assets/images/logo/glory-photography.png" alt="Logo">
+                            </a>
+
+                            <!-- navigation -->
+                            <nav class="pxn_main_navigation d-none d-lg-inline-block">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li class="has-dropdown"><a href="javascript:void(0);">Our Services</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="wedding-photography.html">Wedding Photography</a></li>
+                                            <li><a href="pre-wedding-shoot.html">Pre-Wedding Shoot</a></li>
+                                            <li><a href="baby-shoot.html">Baby Photography</a></li>
+                                            <li><a href="maternity-shoot.html">Maternity Shoot</a></li>
+                                            <li><a href="event-coverage.html">Event Coverage</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="portfolio.html">Portfolio</a></li>
+                                    <li><a href="video-films.html">Films</a></li>
+                                    <!-- <li class="has-dropdown"><a href="javascript:void(0);">Enquiry</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="baby-shoot-enquiry.html">Baby Photoshoot Enquiry</a></li>
+                                            <li><a href="wedding-photography-enquiry.html">Wedding Photography
+                                                    Enquiry</a></li>
+                                        </ul>
+                                    </li> -->
+                                    <li><a href="blog.html">Blog</a></li>
+                                </ul>
+                            </nav>
+
+                            <!-- socials -->
+                            <ul class="pxn_socials_2  d-none d-xxl-inline-flex">
+                                <li><a class="social" href="https://facebook.com/" target="_blank"><i
+                                            class="pxni-facebook"></i></a>
+                                </li>
+                                <li><a class="social" href="https://x.com/" target="_blank"><i
+                                            class="pxni-x-twitter"></i></a></li>
+                                <li><a class="social" href="https://linkedin.com/" target="_blank"><i
+                                            class="pxni-linkedin"></i></a>
+                                </li>
+                                <li><a class="social" href="https://instagram.com/" target="_blank"><i
+                                            class="pxni-instagram"></i></a>
+                                </li>
+                            </ul>
+
+                            <!-- right info -->
+                            <div class="pxn_header_right d-none d-md-inline-flex flex-wrap align-items-center">
+                                <div class="glory_butt_parent mt-0">
+                                    <a href="contact-us.html" class="btn-style-one">
+                                        <span class="btn-arrow-left">
+                                            <img src="assets/images/icons/right-arrow-1-2.webp" alt="Glory Photography">
+                                        </span>
+
+                                        <span class="btn-title">Contact Us</span>
+
+                                        <span class="btn-arrow-right">
+                                            <img src="assets/images/icons/right-arrow-1-2.webp" alt="Glory Photography">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- <a href="contact-us.html" class="pxn_header_btn pxn-btn-primary">
+                                    <span class="btn_text"><span>Contact Us</span></span>
+                                    <span class="btn_icon"><i class="bi bi-arrow-right"></i></span>
+                                </a> -->
+                            </div>
+
+                            <!-- offcanvas toggle -->
+                            <button class="pxn_offcanvas_toggle d-lg-none">
+                                <span class="text">Menu</span>
+                                <span class="icon">
+                                    <img src="assets/images/icons/menu.png" alt="">
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end: Header Area -->
+
+    <!-- Page Banner -->
+    <section class="page-breadcrumbs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="text-c1">Video Films</h1>
+                    <p>
+                        <a href="index.html" class="text-white">Home</a>
+                        <span class="px-2">/</span>
+                        <span>Video Films</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container py-5">
+            <div class="sec-title mb-0">
+                <span
+                    class="sub-title tz-sub-tilte tz-sub-anim tx-subTitle d-flex align-items-center justify-content-center font-cursive">
+                    <img src="assets/images/icons/sparkling.png" alt="img">
+                    Cinematic Gallery
+                </span>
+                <h1 class="title tx-title text-center sec_title tz-itm-title tz-itm-anim">
+                    Celebrating Love Through <span>Cinematic Video Films</span>
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 py-2">
+                    <iframe width="100%" height="250"
+                        src="https://www.youtube.com/embed/uN5NpIvfZJA?si=jtHaQL4Soyu5Seua"
+                        title="Cinematic Wedding Film" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen="">
+                    </iframe>
+                </div>
+                <div class="col-lg-4 py-2">
+                    <iframe width="100%" height="250"
+                        src="https://www.youtube.com/embed/JbZqhvJXSas?si=qcQKPfiXwgPWOggR"
+                        title="Cinematic Wedding Film" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen="">
+                    </iframe>
+                </div>
+                <div class="col-lg-4 py-2">
+                    <iframe width="100%" height="250"
+                        src="https://www.youtube.com/embed/wkg2Jg_JQSc?si=hynMZFFJlNe_3dvM"
+                        title="Cinematic Wedding Film" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen="">
+                    </iframe>
+                </div>
+                <!-- <div class="col-lg-4 py-2">
+                    <iframe width="100%" height="250"
+                        src="https://www.youtube.com/embed/uN5NpIvfZJA?si=jtHaQL4Soyu5Seua"
+                        title="Cinematic Wedding Film" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen="">
+                    </iframe>
+                </div>
+                <div class="col-lg-4 py-2">
+                    <iframe width="100%" height="250"
+                        src="https://www.youtube.com/embed/JbZqhvJXSas?si=qcQKPfiXwgPWOggR"
+                        title="Cinematic Wedding Film" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen="">
+                    </iframe>
+                </div>
+                <div class="col-lg-4 py-2">
+                    <iframe width="100%" height="250"
+                        src="https://www.youtube.com/embed/wkg2Jg_JQSc?si=hynMZFFJlNe_3dvM"
+                        title="Cinematic Wedding Film" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen="">
+                    </iframe>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="glory-footer">
+        <div class="container">
+            <div class="row gy-5">
+                <!-- About -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget">
+                        <img src="assets/images/logo/glory-photography.png" alt="Glory Photography" class="footer-logo">
+                        <p>
+                            Capturing weddings, portraits, maternity journeys,
+                            and unforgettable celebrations through timeless
+                            photography and cinematic storytelling.
+                        </p>
+                        <div class="footer-socials">
+                            <a href="https://www.facebook.com/profile.php?id=100063702384110" target="_blank">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/glory_photography_/" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/129913932/" target="_blank">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="https://x.com/GloryCreativest" target="_blank">
+                                <i class="bi bi-twitter-x"></i>
+                            </a>
+                        </div>
+                        <div class="mt-4">
+                            <a href="wedding-photographers-in-madurai.html" class="fw-bold"
+                                style="text-decoration: underline; color: #d4af37; font-size: 15px; transition: color 0.3s;"
+                                onmouseover="this.style.color='#ffd400'" onmouseout="this.style.color='#d4af37'">Wedding
+                                Photographers in Madurai</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="packages.html">Packages</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Services -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h5>Our Services</h5>
+                        <ul>
+                            <li><a href="wedding-photography.html">Wedding Photography</a></li>
+                            <li><a href="pre-wedding-shoot.html">Pre-Wedding Shoot</a></li>
+                            <li><a href="baby-shoot.html">Baby Photography</a></li>
+                            <li><a href="maternity-shoot.html">Maternity Shoot</a></li>
+                            <li><a href="event-coverage.html">Event Coverage</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Contact -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h5>Contact Info</h5>
+                        <ul class="footer-contact">
+                            <li>
+                                <a href="https://www.google.com/maps?sca_esv=2abe5610bf025d75&rlz=1C1RXQR_enIN1095IN1096&sxsrf=APpeQntJ5BcpBexlwlkyngU5VZJQFaW5Gw:1781932259200&kgmid=/g/11z0yy6bq0&shem=dlvs1,epsd1,ltac,rimspwouoe&shndl=30&kgs=95bdccae984aefb3&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KTPli9QUzwA7MdQQWK6AKFQC&daddr=No105+,buddan+street,+manager+house,+Seventh-Day+Adventist+school,+back,+Kochadai,+Madurai,+Tamil+Nadu+625016"
+                                    target="_blank" class="d-flex gap-1 align-items-start">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    No.105, Buddan Street, <br />
+                                    Manager House, <br />
+                                    SDA School Back Side, <br />
+                                    Kochadai, Madurai, <br />
+                                    Tamil Nadu – 625016
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+919150840876" class="d-flex gap-1 align-items-start">
+                                    <i class="bi bi-telephone-fill"></i>
+                                    +91 91508 40876
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:gloryofficials@outlook.com" class="d-flex gap-1 align-items-start">
+                                    <i class="bi bi-envelope-fill"></i>
+                                    gloryofficials@outlook.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>
+                            © Glory Creative Studio. All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>
+                            Designed and Developed by <a href="https://www.iqtechway.com/" class="text-black"
+                                target="_blank">Iqtechway</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="scrollToTop scroll-btn"><i class="bi bi-chevron-double-up"></i></a>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/meanmenu.min.js"></script>
+    <script src="assets/js/gsap-split-text.min.js"></script>
+    <script src="assets/js/gsap-scroll-trigger.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
